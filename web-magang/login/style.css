@@ -1,0 +1,153 @@
+/* Reset dasar agar tampilan lebih konsisten di berbagai browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menyeting background utama */
+body {
+  min-height: 100vh;
+  /* Ganti ../assets/background.jpg dengan file/foto yang sesuai UI Anda */
+  background: url("../assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container utama yang membungkus login card dan quote card */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.3); /* Lapisan gelap (opsional) */
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Bagian kiri (Login) */
+.login-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+/* Bagian logo & tulisan */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Logo CAR */
+.car-logo {
+  width: 60px; /* Sesuaikan ukuran logo dengan design */
+  height: auto;
+}
+
+/* Tulisan "Life Insurance" */
+.car-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003399; /* atur warna sesuai brand */
+  margin-bottom: -5px;
+}
+
+/* Tulisan "Web SPAJ" */
+.car-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 0.2rem;
+}
+
+/* Tulisan "Selamat Datang Kembali" */
+.welcome-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Teks instruksi singkat */
+.instruction-text {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Group Label + Input */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Tombol Login */
+.btn-login {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #004c99;
+}
+
+/* Bagian kanan (Quote) */
+.quote-card {
+  background-color: #ffffff;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.quote-text {
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Responsif untuk layar sempit: tumpuk card ke bawah */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .quote-card {
+    margin-top: 10px;
+  }
+}

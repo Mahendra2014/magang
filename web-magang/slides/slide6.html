@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slide 6 - Verifikasi Data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tambahkan class "slide6" pada container -->
+  <div class="slide-container slide6">
+
+    <h1 class="page-title">Verifikasi Data Calon Nasabah</h1>
+
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">06</span>
+    </div>
+
+    <div class="subsection-title">Verifikasi Informasi</div>
+
+    <!-- Pertanyaan A dan B dengan Checkbox -->
+    <div class="verification-questions">
+      <div class="question-row">
+        <span class="question-text">A. Apakah semua informasi di atas telah diisi dengan benar?</span>
+        <div class="checkbox-yn">
+          <label><input type="checkbox" name="questionA" value="ya" required> Ya</label>
+          <label><input type="checkbox" name="questionA" value="tidak"> Tidak</label>
+        </div>
+      </div>
+      <div class="question-row">
+        <span class="question-text">B. Apakah Anda setuju dengan syarat dan ketentuan yang berlaku?</span>
+        <div class="checkbox-yn">
+          <label><input type="checkbox" name="questionB" value="ya" required> Ya</label>
+          <label><input type="checkbox" name="questionB" value="tidak"> Tidak</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian "Lengkapi Kolom Dibawah Ini" dengan Tabel -->
+    <div class="additional-info">
+      <p class="info-text">Lengkapi kolom di bawah ini:</p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>Detail</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><input type="text" placeholder="Nama" required /></td>
+              <td><input type="text" placeholder="Detail" required /></td>
+              <td><input type="text" placeholder="Keterangan" required /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><input type="text" placeholder="Nama" required /></td>
+              <td><input type="text" placeholder="Detail" required /></td>
+              <td><input type="text" placeholder="Keterangan" required /></td>
+            </tr>
+            <!-- Tambahkan baris tambahan sesuai kebutuhan -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Text Box Besar Setelah Tabel -->
+    <div class="additional-comments">
+      <label for="comments">* Alasan:</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Masukkan alasan di sini..." required></textarea>
+    </div>
+
+    <!-- Tombol Berikutnya -->
+    <a href="/slides/slide7.html" class="next-btn">Berikutnya</a>
+
+  </div>
+</body>
+</html>

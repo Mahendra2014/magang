@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slide 7 - Pekerjaan dan Kegiatan Calon Tertanggung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tambahkan class "slide7" pada container -->
+  <div class="slide-container slide7">
+
+    <!-- Judul Halaman -->
+    <h1 class="page-title">Pekerjaan dan Kegiatan Calon Tertanggung</h1>
+
+    <!-- Bagian Lampiran -->
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">07</span>
+    </div>
+
+    <!-- Subjudul -->
+    <div class="subsection-title">Detail Pekerjaan dan Kegiatan</div>
+
+    <!-- Formulir Isian -->
+    <form class="job-activity-form" action="/slides/slide8.html" method="post">
+      
+      <!-- Pertanyaan A -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="taskDescription">A. Berikan penjelasan mengenai tugas dari kegiatan rutin dari pekerjaan Anda:</label>
+          <textarea id="taskDescription" name="taskDescription" rows="4" placeholder="Masukkan penjelasan tugas rutin Anda..." required></textarea>
+        </div>
+      </div>
+
+      <!-- Pertanyaan B -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="intendToChangeJob">B. Apakah Anda bermaksud untuk beralih pekerjaan dalam waktu dekat? Jika ya, pekerjaan apa?</label>
+          <textarea id="intendToChangeJob" name="intendToChangeJob" rows="4" placeholder="Jika ya, sebutkan pekerjaan yang Anda maksud..." required></textarea>
+        </div>
+      </div>
+
+      <!-- Pertanyaan C -->
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="riskActivities">C. Apakah Anda melakukan atau memiliki kegemaran/berminat ikut kegiatan yang berisiko (seperti balap motor, mobil, scuba diving dan olahraga/kegiatan berisiko lainnya), melakukan perjalanan selain dari liburan atau penerbangan selain sebagai penumpang pada penerbangan yang berjadwal (regular scheduled airline)?</label>
+          <div class="checkbox-group-inline">
+            <label>
+              <input type="radio" name="riskActivities" value="ya" required> Ya
+            </label>
+            <label>
+              <input type="radio" name="riskActivities" value="tidak"> Tidak
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Box untuk Penjelasan Jika Ya -->
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="riskActivitiesExplanation">Jika "Ya", berikanlah penjelasan selengkapnya:</label>
+          <textarea id="riskActivitiesExplanation" name="riskActivitiesExplanation" rows="4" placeholder="Masukkan penjelasan kegiatan berisiko Anda..." required></textarea>
+        </div>
+      </div>
+
+      <a href="/slides/slide8.html" class="next-btn">Berikutnya</a>
+    </form>
+
+  </div>
+</body>
+</html>

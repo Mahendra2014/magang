@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide 3 - Keterangan Tambahan</title>
+  <link rel="stylesheet" href="/slides/style.css">
+</head>
+<body>
+  <div class="slide-container centered-slide">
+    <h1 class="page-title">Pendataan Calon Nasabah</h1>
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">03</span>
+    </div>
+    <div class="subsection-title">Keterangan Tambahan</div>
+
+    <form class="nasabah-form">
+      <!-- Tujuan pengajuan asuransi -->
+      <div class="form-group">
+        <label><strong>A. Tujuan pengajuan asuransi</strong> <small>(pilihan dapat lebih dari satu)</small></label>
+        <div class="inline-group">
+          <label><input type="checkbox" name="tujuan" value="proteksi"> Proteksi</label>
+          <label><input type="checkbox" name="tujuan" value="tabungan"> Tabungan</label>
+          <label><input type="checkbox" name="tujuan" value="pendidikan"> Pendidikan</label>
+          <label><input type="checkbox" name="tujuan" value="pensiun"> Pensiun</label>
+          <label><input type="checkbox" name="tujuan" value="investasi"> Investasi</label>
+          <label><input type="checkbox" name="tujuan" value="lainnya"> Lainnya, sebutkan: 
+            <input type="text" name="tujuanLainnya" placeholder="Tulis di sini" style="width: 150px;">
+          </label>
+        </div>
+      </div>
+
+      <!-- Jumlah orang yang ditanggung -->
+      <div class="form-group">
+        <label><strong>B. Jumlah orang yang ditanggung secara finansial oleh Calon Pembayar Premi:</strong></label>
+        <div class="inline-group">
+          <label><input type="radio" name="jumlahOrang" value="1orang"> 1 Orang</label>
+          <label><input type="radio" name="jumlahOrang" value="2orang"> 2 Orang</label>
+          <label><input type="radio" name="jumlahOrang" value="3orang"> 3 Orang atau lebih</label>
+          <label><input type="radio" name="jumlahOrang" value="tidakAda"> Tidak ada</label>
+        </div>
+      </div>
+
+      <!-- Tombol Berikutnya -->
+      <a href="/slides/slide4.html" class="next-btn">Berikutnya</a>
+    </form>
+  </div>
+</body>
+</html>

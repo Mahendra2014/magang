@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slide 4 - Pertanggungan Yang Diminta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slide-container">
+    <h1 class="page-title">Pendataan Calon Nasabah</h1>
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">04</span>
+    </div>
+    <div class="subsection-title">Pertanggungan Yang Diminta</div>
+
+    <form class="nasabah-form" action="#" method="post">
+      <!-- Baris 1: Empat Text-Box Sejajar -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mata_uang">Pilih Mata Uang</label>
+          <select id="mata_uang" name="mata_uang" required>
+            <option value="">Pilih Mata Uang</option>
+            <option value="rupiah">Rupiah</option>
+            <!-- Tambahkan opsi mata uang lain jika diperlukan -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="jumlah">Jumlah</label>
+          <input type="number" id="jumlah" name="jumlah" placeholder="Jumlah" required min="0">
+        </div>
+        <div class="form-group">
+          <label for="jenis_bayar">Jenis Bayar</label>
+          <select id="jenis_bayar" name="jenis_bayar" required>
+            <option value="">Pilih Jenis Bayar</option>
+            <option value="cash">Cash</option>
+            <option value="transfer">Transfer</option>
+            <!-- Tambahkan opsi jenis bayar lain jika diperlukan -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="masa_pertanggungan">Masa Pertanggungan (Tahun)</label>
+          <input type="number" id="masa_pertanggungan" name="masa_pertanggungan" placeholder="Tahun" required min="1">
+        </div>
+      </div>
+
+      <!-- Baris 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mulai_berlaku">Mulai Berlaku</label>
+          <input type="date" id="mulai_berlaku" name="mulai_berlaku" required>
+        </div>
+        <div class="form-group">
+          <label for="sampai_dengan">Sampai Dengan</label>
+          <input type="date" id="sampai_dengan" name="sampai_dengan" required>
+        </div>
+      </div>
+
+      <!-- Baris 3 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="jenis_investasi">Jenis Investasi *(Diisi Jika produk PAYDI)</label>
+          <div class="inline-group">
+            <select id="jenis_investasi" name="jenis_investasi" required>
+              <option value="">Pilih Jenis Investasi</option>
+              <option value="saham">Saham</option>
+              <option value="obligasi">Obligasi</option>
+              <!-- Tambahkan opsi jenis investasi lain jika diperlukan -->
+            </select>
+            <div class="percentage-group">
+              <input type="number" id="persentase_investasi" name="persentase_investasi" placeholder="0" min="0" max="100" required>
+              <span class="percentage-symbol">%</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cara_pembayaran_premi">Cara Pembayaran Premi Lanjutan</label>
+          <select id="cara_pembayaran_premi" name="cara_pembayaran_premi" required>
+            <option value="">Pilih Cara Pembayaran</option>
+            <option value="bulanan">Bulanan</option>
+            <option value="tahunan">Tahunan</option>
+            <!-- Tambahkan opsi cara pembayaran premi lain jika diperlukan -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Tabel Pertanggungan -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Jenis Pertanggungan Pokok</th>
+              <th>Uang Pertanggungan</th>
+              <th>Premi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" id="jenis_pertanggungan_pokok" name="jenis_pertanggungan_pokok" placeholder="Isi Data" required></td>
+              <td><input type="number" id="uang_pertanggungan" name="uang_pertanggungan" placeholder="Isi Data" required min="0"></td>
+              <td><input type="number" id="premi_pokok" name="premi_pokok" placeholder="Isi Data" required min="0"></td>
+            </tr>
+            <tr>
+              <td>Jenis Pertanggungan Tumpangan</td>
+              <td><input type="number" id="uang_pertanggungan_tumpangan" name="uang_pertanggungan_tumpangan" placeholder="Isi Data" min="0"></td>
+              <td><input type="number" id="premi_tumpangan" name="premi_tumpangan" placeholder="Isi Data" min="0"></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: right;">Biaya Polis + Materai</td>
+              <td><input type="number" id="biaya_polis_materai" name="biaya_polis_materai" placeholder="Jumlah Total" required min="0"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tabel No. Rekening Pemegang Polis -->
+      <div class="form-group">
+        <label for="no_rekening_pemegang_polis">No. Rekening Pemegang Polis :</label>
+        <table class="nasabah-table">
+          <thead>
+            <tr>
+              <th>Nama Bank</th>
+              <th>Cabang Bank</th>
+              <th>No. Rekening</th>
+              <th>Nama Pemilik Rekening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select id="nama_bank" name="nama_bank" required>
+                  <option value="">Pilih Bank</option>
+                  <option value="mandiri">Bank Mandiri</option>
+                  <option value="bca">Bank BCA</option>
+                  <option value="bni">Bank BNI</option>
+                  <option value="bri">Bank BRI</option>
+                  <!-- Tambahkan opsi bank lain jika diperlukan -->
+                </select>
+              </td>
+              <td>
+                <input type="text" id="cabang_bank" name="cabang_bank" placeholder="Isi Cabang" required>
+              </td>
+              <td>
+                <input type="text" id="no_rekening" name="no_rekening" placeholder="Isi Nomor Rekening" required pattern="\d+">
+              </td>
+              <td>
+                <input type="text" id="nama_pemilik" name="nama_pemilik" placeholder="Isi Nama Pemilik" required>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Catatan -->
+      <div class="note">
+        1. PT AJ Central Asia Raya tidak menerima pembayaran kontribusi peserta secara tunai.<br>
+        2. Pembayaran kontribusi sah peserta diakui apabila sudah masuk ke rekening PT AJ Central Asia Raya.
+      </div>
+
+      <!-- Tombol Berikutnya -->
+      <a href="/slides/slide5.html" class="next-btn">Berikutnya</a>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+/* ========================= */
+/*        Reset Dasar        */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================= */
+/*      Container Utama      */
+/* ========================= */
+.slide-container {
+  background-color: #ccc;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========================= */
+/*        Judul Halaman      */
+/* ========================= */
+.page-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ========================= */
+/*      Bagian Lampiran      */
+/* ========================= */
+.lampiran-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.lampiran-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.lampiran-box {
+  background-color: #888;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* ========================= */
+/*         Subjudul          */
+/* ========================= */
+.subsection-title {
+  background-color: #5E9C9A;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ========================= */
+/*       Informasi teks      */
+/* ========================= */
+.info-text {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-wna {
+  width: 200px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+/* Label "Apakah terdapat Penerima Manfaat yang :" di kiri */
+.pm-label p {
+  margin: 10px 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* ========================= */
+/*      Tabel Slide 5        */
+/* ========================= */
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: center; /* Tabel di tengah */
+  vertical-align: middle;
+}
+
+.table-container th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+/* ========================= */
+/*      Grid Pertanyaan      */
+/* ========================= */
+.grid-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Menggunakan CSS Grid untuk question-row */
+.question-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.question-text {
+  text-align: left;
+  font-weight: 400;
+}
+
+.checkbox-yn {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+/* ========================= */
+/*        Form Layout        */
+/* ========================= */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.33% - 20px); /* 3 kolom per baris */
+  min-width: 180px;
+}
+
+/* Kosong agar tetap 3 kolom alignment */
+.placeholder-empty {
+  visibility: hidden; 
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.inline-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* ========================= */
+/*    Ukuran Input & Select  */
+/* ========================= */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+/* Supaya Kode Pos, Telp, Kota, Detail Hubungan tidak terlalu panjang */
+.narrow-input {
+  max-width: 200px;
+}
+
+/* ========================= */
+/*     Checkbox dan Radio    */
+/* ========================= */
+.checkbox-group-inline {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkbox-group-inline input[type="checkbox"],
+.checkbox-group-inline input[type="radio"] {
+  accent-color: #6FA8DC; /* Warna biru cerah */
+}
+
+/* ========================= */
+/* Slide 1 - 4 (tidak diubah) */
+/* ... */
+
+/* ========================= */
+/* Slide 5 - Yang Dituju     */
+/* ========================= */
+/* Pastikan .slide5 mempengaruhi layout di Slide 5 saja */
+
+/* ========================= */
+/*      Tombol Berikutnya    */
+/* ========================= */
+.next-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #5e9c9a;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.next-btn:hover {
+  background-color: #4a7e7a;
+}
+
+/* ========================= */
+/*         Responsif         */
+/* ========================= */
+@media (max-width: 700px) {
+  .question-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+  }
+  .checkbox-yn {
+    justify-content: flex-start;
+  }
+  .form-group {
+    flex: 1 1 100%;
+  }
+  .grid-questions {
+    align-items: flex-start;
+  }
+}
+/* ========================= */
+/*          Slide 6          */
+/* ========================= */
+.slide6 .subsection-title {
+  /* Tambahkan styling khusus jika diperlukan */
+}
+
+.slide6 .verification-questions {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.slide6 .question-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.slide6 .question-text {
+  text-align: left;
+  font-weight: 600;
+}
+
+.slide6 .checkbox-yn {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.slide6 .checkbox-yn label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+}
+
+.slide6 .additional-info {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.slide6 .additional-info .info-text {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.slide6 .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.slide6 .table-container th,
+.slide6 .table-container td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.slide6 .table-container th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.slide6 .table-container td input[type="text"] {
+  width: 90%;
+  padding: 6px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.slide6 .additional-comments {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide6 .additional-comments label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.slide6 .additional-comments textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.slide6 .additional-comments textarea:focus {
+  outline: none;
+  border-color: #6FA8DC;
+}
+
+.slide6 .next-btn {
+  /* Styling sudah sesuai dengan Slide 1-5 */
+}
+
+/* ========================= */
+/*         Responsif         */
+/* ========================= */
+@media (max-width: 700px) {
+  .slide6 .question-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .slide6 .checkbox-yn {
+    justify-content: flex-start;
+  }
+
+  .slide6 .table-container table,
+  .slide6 .table-container th,
+  .slide6 .table-container td {
+    font-size: 0.8rem;
+  }
+
+  .slide6 .additional-info,
+  .slide6 .additional-comments {
+    max-width: 100%;
+  }
+
+  .slide6 .additional-comments textarea {
+    width: 100%;
+  }
+}
+/* ========================= */
+/*          Slide 7          */
+/* ========================= */
+
+/* Custom Radio Buttons - Membuatnya berbentuk kotak */
+.slide7 .custom-radio {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 400;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+/* Sembunyikan radio button asli */
+.slide7 .custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Buat kotak kustom */
+.slide7 .custom-radio .radio-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px; /* Sudut sedikit melengkung, bisa diubah ke 0 untuk sudut tajam */
+}
+
+/* Hover effect */
+.slide7 .custom-radio:hover input ~ .radio-btn {
+  background-color: #f0f0f0;
+}
+
+/* Ketika radio button dipilih */
+.slide7 .custom-radio input:checked ~ .radio-btn {
+  background-color: #6FA8DC;
+  border-color: #6FA8DC;
+}
+
+/* Tambahkan tanda centang saat radio button dipilih */
+.slide7 .custom-radio input:checked ~ .radio-btn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Pastikan teks berada di samping radio button */
+.slide7 .custom-radio span {
+  margin-left: 10px;
+}
+
+/* Responsif untuk Slide 7 */
+@media (max-width: 700px) {
+  .slide7 .checkbox-group-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slide7 .custom-radio {
+    padding-left: 25px;
+  }
+
+  .slide7 .custom-radio .radio-btn {
+    height: 18px;
+    width: 18px;
+  }
+
+  .slide7 .custom-radio span {
+    margin-left: 8px;
+  }
+}

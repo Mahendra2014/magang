@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide 2 - Data Pribadi Calon Tertanggung</title>
+  <link rel="stylesheet" href="/slides/style.css" />
+</head>
+<body>
+  <div class="slide-container">
+    <h1 class="page-title">Pendataan Calon Nasabah</h1>
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">02</span>
+    </div>
+    <div class="subsection-title">Data Pribadi Calon Tertanggung</div>
+
+    <form class="nasabah-form">
+      <!-- Baris 1 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="namaLengkap">Nama Lengkap</label>
+          <input type="text" id="namaLengkap" name="namaLengkap" placeholder="Nur Hidayah Putri" value="Nur Hidayah Putri" />
+        </div>
+        <div class="form-group">
+          <label for="jenisKelamin">Jenis Kelamin</label>
+          <select id="jenisKelamin" name="jenisKelamin">
+            <option>Pilih</option>
+            <option value="laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="usia">Usia</label>
+          <input type="number" id="usia" name="usia" placeholder="40" value="40" />
+        </div>
+      </div>
+
+      <!-- Baris 2 -->
+      <div class="form-row">
+        <div class="form-group form-group-wide">
+          <label for="tempatLahir">Tempat, Tanggal Lahir</label>
+          <div class="inline-group">
+            <input type="text" id="tempatLahir" name="tempatLahir" placeholder="DKI Jakarta" value="DKI Jakarta" />
+            <input type="date" id="tanggalLahir" name="tanggalLahir" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option>Pilih</option>
+            <option value="menikah">Menikah</option>
+            <option value="belumMenikah">Belum Menikah</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="agama">Agama/Kepercayaan</label>
+          <select id="agama" name="agama">
+            <option>Pilih</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Baris 3 -->
+      <div class="form-row">
+        <div class="form-group form-group-wide">
+          <label for="alamatTinggal">Alamat Tinggal (sesuai identitas)</label>
+          <div class="inline-group">
+            <input type="text" id="alamatTinggal" name="alamatTinggal" placeholder="Herlina" value="Herlina" />
+            <input type="text" id="kotaTinggal" name="kotaTinggal" placeholder="Kota" value="Herlina" />
+            <input type="text" id="kodePosTinggal" name="kodePosTinggal" placeholder="Kode Pos" value="Herlina" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris 4 -->
+      <div class="form-row">
+        <div class="form-group form-group-wide">
+          <label for="alamatKorespondensi">Alamat Korespondensi (bila berbeda dengan alamat tinggal)</label>
+          <div class="inline-group">
+            <input type="text" id="alamatKorespondensi" name="alamatKorespondensi" placeholder="Herlina" value="Herlina" />
+            <input type="text" id="kotaKorespondensi" name="kotaKorespondensi" placeholder="Kota" value="Herlina" />
+            <input type="text" id="kodePosKorespondensi" name="kodePosKorespondensi" placeholder="Kode Pos" value="Herlina" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris 5 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telp">Telp</label>
+          <input type="tel" id="telp" name="telp" placeholder="+62812831124" value="+62812831124" />
+        </div>
+        <div class="form-group">
+          <label for="ponsel">Ponsel (HP)</label>
+          <input type="tel" id="ponsel" name="ponsel" placeholder="+62812831124" value="+62812831124" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="john.doe@doe.com" value="john.doe@doe.com" />
+        </div>
+        <div class="form-group">
+          <label for="nik">NIK KTP</label>
+          <input type="text" id="nik" name="nik" placeholder="NIK KTP" />
+        </div>
+      </div>
+
+      <!-- Baris 6 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="npwp">NPWP</label>
+          <input type="text" id="npwp" name="npwp" placeholder="-" />
+        </div>
+        <div class="form-group">
+          <label for="pekerjaan">Pekerjaan</label>
+          <select id="pekerjaan" name="pekerjaan">
+            <option>Pilih</option>
+            <option value="PNS">PNS</option>
+            <option value="karyawan">Karyawan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pendidikanTerakhir">Pendidikan Terakhir</label>
+          <select id="pendidikanTerakhir" name="pendidikanTerakhir">
+            <option>Pilih</option>
+            <option value="sma">SMA</option>
+            <option value="d3">D3</option>
+            <option value="s1">S1</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="penghasilan">Penghasilan / Tahun</label>
+          <select id="penghasilan" name="penghasilan">
+            <option>Pilih</option>
+            <option value="<50jt">&lt; 50 juta</option>
+            <option value="50-100jt">50-100 juta</option>
+            <option value=">100jt">&gt; 100 juta</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="note">
+        *) Jika calon tertanggung adalah warga negara asing, diwajibkan untuk mengisi formulir
+        <strong>CSR (Common Reporting Standards)</strong>
+      </p>
+
+      <!-- Tombol Berikutnya -->
+      <a href="/slides/slide3.html" class="next-btn">Berikutnya</a>
+    </form>
+  </div>
+</body>
+</html>

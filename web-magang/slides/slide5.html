@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Slide 5 - Yang Ditunjuk (Penerima Manfaat Asuransi)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Pastikan menambahkan class "slide5" -->
+  <div class="slide-container slide5">
+    <h1 class="page-title">Pendataan Calon Nasabah</h1>
+    <div class="lampiran-container">
+      <span class="lampiran-label">Lampiran ke</span>
+      <span class="lampiran-box">01</span>
+    </div>
+    <div class="subsection-title">Yang Ditunjuk (Penerima Manfaat Asuransi)</div>
+
+    <!-- Tabel -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Lengkap</th>
+            <th>Tempat/Tgl Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Hubungan dengan tertanggung</th>
+            <th>%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" placeholder="Isi Nama" /></td>
+            <td><input type="text" placeholder="Isi Tempat dan Tanggal Lahir" /></td>
+            <td>
+              <select>
+                <option>Pilih</option>
+                <option value="laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </td>
+            <td><input type="text" placeholder="Isi Hubungan" /></td>
+            <td><input type="number" placeholder="%" min="0" max="100" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Info WNA -->
+    <p class="info-text">
+      Jika YANG DITUNJUK adalah warga negara asing, mohon disebutkan kewarganegaraannya:
+      <input type="text" placeholder="Belanda" class="input-wna" />
+    </p>
+
+    <!-- Label "Apakah terdapat Penerima Manfaat yang :" -->
+    <div class="pm-label">
+      <p>Apakah terdapat Penerima Manfaat yang :</p>
+    </div>
+
+    <!-- Pertanyaan (i), (ii), (iii) -->
+    <div class="grid-questions">
+      <div class="question-row">
+        <span class="question-text">(i) meminta Anda untuk mengajukan permohonan asuransi ini</span>
+        <div class="checkbox-yn">
+          <label><input type="checkbox" checked>Ya</label>
+          <label><input type="checkbox">Tidak</label>
+        </div>
+      </div>
+      <div class="question-row">
+        <span class="question-text">(ii) menjadi pembayar Premi?</span>
+        <div class="checkbox-yn">
+          <label><input type="checkbox" checked>Ya</label>
+          <label><input type="checkbox">Tidak</label>
+        </div>
+      </div>
+      <div class="question-row">
+        <span class="question-text">(iii) memiliki akses terhadap manfaat dari Polis?</span>
+        <div class="checkbox-yn">
+          <label><input type="checkbox" checked>Ya</label>
+          <label><input type="checkbox">Tidak</label>
+        </div>
+      </div>
+    </div>
+
+    <p class="info-text">
+      Apabila jawaban “Ya” mohon menjawab pertanyaan di bawah ini:
+    </p>
+
+    <!-- Form Slide 5 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nama Lengkap</label>
+        <input type="text" value="Nur Hidayah Putri" />
+      </div>
+      <div class="form-group">
+        <label>Jenis Kelamin</label>
+        <select>
+          <option>Pilih</option>
+          <option value="laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Usia</label>
+        <input type="number" value="40" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Tempat, Tanggal Lahir</label>
+        <div class="inline-group">
+          <input type="text" placeholder="DKI Jakarta" />
+          <input type="date" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Status</label>
+        <select>
+          <option>Pilih</option>
+          <option value="menikah">Menikah</option>
+          <option value="belum_menikah">Belum Menikah</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Agama/Kepercayaan</label>
+        <select>
+          <option>Pilih</option>
+          <option value="islam">Islam</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option>
+          <option value="buddha">Buddha</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Kewarganegaraan</label>
+        <input type="text" value="WNA Malaysia" />
+      </div>
+      <div class="form-group">
+        <label>Nama Gadis Ibu Kandung</label>
+        <input type="text" value="Herlina" />
+      </div>
+      <div class="form-group">
+        <label>Alamat Tinggal (sesuai identitas)</label>
+        <input type="text" value="Herlina" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group narrow-input">
+        <label>Kota</label>
+        <input type="text" value="Herlina" />
+      </div>
+      <div class="form-group narrow-input">
+        <label>Kode Pos</label>
+        <input type="text" value="12345" />
+      </div>
+      <div class="form-group narrow-input">
+        <label>Telp</label>
+        <input type="text" value="+62812831124" />
+      </div>
+    </div>
+
+    <!-- Baris NIK + Jenis Identitas + Pekerjaan -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>NIK / Nomor Identitas Diri</label>
+        <input type="text" value="36740302100110101" />
+      </div>
+      <div class="form-group">
+        <label>Jenis Identitas</label>
+        <div class="checkbox-group-inline">
+          <label><input type="checkbox" checked>KTP</label>
+          <label><input type="checkbox" checked>Paspor (untuk WNA)</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Pekerjaan</label>
+        <select>
+          <option>Tambang</option>
+          <option selected>Direktur</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Baris Pendidikan, Penghasilan, Sumber Pendanaan -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Pendidikan Terakhir</label>
+        <select>
+          <option>Pilih</option>
+          <option value="SMA">SMA</option>
+          <option value="D3">D3</option>
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Penghasilan / Tahun</label>
+        <select>
+          <option>Pilih</option>
+          <option value="<50jt">&lt; 50 Juta</option>
+          <option value="50-100jt">50 - 100 Juta</option>
+          <option value=">100jt">&gt; 100 Juta</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Sumber Pendanaan</label>
+        <select>
+          <option>Lain-lain</option>
+          <option>Gaji</option>
+          <option>Investasi</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Baris Warisan, Hubungan dgn Calon Tertanggung, Detail Hubungan -->
+    <div class="form-row">
+      <div class="form-group narrow-input">
+        <label>Warisan / Lainnya</label>
+        <select>
+          <option>Warisan</option>
+          <option>Lain-lain</option>
+          <option>Hibah</option>
+        </select>
+      </div>
+      <div class="form-group narrow-input">
+        <label>Hubungan dengan Calon Tertanggung</label>
+        <select>
+          <option>Lain-lain</option>
+          <option>Orang Tua</option>
+          <option>Saudara</option>
+        </select>
+      </div>
+      <div class="form-group narrow-input">
+        <label>Detail Hubungan</label>
+        <input type="text" value="Paman" />
+      </div>
+    </div>
+
+    <a href="/slides/slide6.html" class="next-btn">Berikutnya</a>
+  </div>
+</body>
+</html>

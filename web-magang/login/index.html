@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page - CAR Life Insurance Web SPAJ</title>
+  <!-- Panggil file CSS di folder yang sama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <!-- Bagian Kiri: Form Login -->
+    <div class="login-card">
+      <div class="logo-section">
+        <!-- Pastikan path file logo benar -->
+        <img 
+          src="../assets/logo-car.png" 
+          alt="Logo CAR" 
+          class="car-logo"
+        />
+        <div>
+          <h2 class="car-title">Life Insurance</h2>
+          <span class="car-subtitle">Web SPAJ</span>
+        </div>
+      </div>
+
+      <h3 class="welcome-text">Selamat Datang Kembali</h3>
+      <p class="instruction-text">Silahkan Login</p>
+
+      <div class="input-group">
+        <label for="kodeAgen">Kode Agen</label>
+        <input 
+          type="text" 
+          id="kodeAgen" 
+          name="kodeAgen" 
+          placeholder="Masukkan Kode Agen" 
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Masukkan Password" 
+        />
+      </div>
+
+      <button class="btn-login">LOGIN</button>
+    </div>
+
+    <!-- Bagian Kanan: Quote -->
+    <div class="quote-card">
+      <p class="quote-text">
+        “Jika Anda bekerja hanya demi uang, Anda tidak akan pernah berhasil. 
+        Namun, jika Anda mencintai apa yang Anda lakukan dan selalu mengutamakan pelanggan, 
+        kesuksesan akan menjadi milik Anda.”
+      </p>
+      <p class="quote-author">Ray Kroc</p>
+    </div>
+  </div>
+</body>
+</html>
